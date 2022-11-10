@@ -34,6 +34,8 @@ public class PlayerController : MonoBehaviour
         if (GameManager.isGameActive)
         {
             animator.SetFloat("Speed_f", 5);
+
+            //Abstraction
             MovePlayer();
             ConstrainPlayer();
             FireProjectile();
